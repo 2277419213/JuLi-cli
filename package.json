@@ -1,10 +1,10 @@
 {
-	"name": "JuLi-cli",
+	"name": "juli-cli",
 	"version": "1.0.0",
 	"description": "一款自动生成自己开源过项目的手脚架",
-	"main": "./bin/JuLi-cli",
+	"main": "./bin/juli-cli",
 	"bin": {
-		"JuLi-cli": "./bin/JuLi-cli"
+		"juli-cli": "./bin/juli-cli"
 	},
 	"keywords": [
 		"cli",
