@@ -1,24 +1,32 @@
 {
-	"name": "juli-cli",
-	"version": "1.0.0",
-	"description": "一款自动生成自己开源过项目的手脚架",
-	"main": "./bin/juli-cli",
-	"bin": {
-		"juli-cli": "./bin/juli-cli"
-	},
-	"keywords": [
-		"cli",
-		"vue"
-	],
-	"author": "居里栈栈",
-	"license": "MIT",
-	"dependencies": {
-		"alphabetjs": "^0.1.4",
-		"chalk": "^4.1.0",
-		"commander": "^6.2.1",
-		"download-git-repo": "^3.0.2",
-		"inquirer": "^7.3.3",
-		"ora": "^5.2.0",
-		"shelljs": "^0.8.4"
-	}
+  "name": "juli-cli",
+  "version": "1.0.1",
+  "description": "一款自动初始化开源项目的脚手架",
+  "main": "./bin/juli-cli",
+  "bin": {
+    "juli-cli": "./bin/juli-cli"
+  },
+  "keywords": [
+    "cli",
+    "vue"
+  ],
+  "author": "居里栈栈",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2277419213/JuLi-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/2277419213/JuLi-cli/issues"
+  },
+  "homepage": "https://github.com/2277419213/JuLi-cli#readme",
+  "dependencies": {
+    "alphabetjs": "^0.1.4",
+    "chalk": "^4.1.0",
+    "commander": "^6.2.1",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.3.3",
+    "ora": "^5.2.0",
+    "shelljs": "^0.8.4"
+  }
 }
