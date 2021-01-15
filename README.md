@@ -13,3 +13,8 @@ JuLi-cli -V
 JuLi-cli -I [name] 或者 JuLi-cli --init [name]
 ```
 
+### 版本说明
+
+- 1.0.0   
+完成功能开发，提交初代版本。
+
