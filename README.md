@@ -21,6 +21,13 @@ juli-cli -I [name] 或者 juli-cli --init [name]
 | key | 索引，要保持唯一 |
 | name | 模板的名称 |
 | value | 模板对应的地址，http前面要带direct: |
+
+模板相关命令说明
+| 命令 | 说明 |
+| :--- | :--- |
+| npm config set juliurl urlList | 设置模板地址，重复设置可以覆盖 |
+| npm config get juliurl | 查看设置的模板地址，若为undefined，则未设置 |
+| npm config delete juliurl | 删除所设置的模板 |
       
 示例   
 ```js
