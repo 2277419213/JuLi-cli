@@ -1,27 +1,11 @@
 //npm模块
 const inquirer = require("inquirer"); //交互问答机
-//常量
-const urlList = [
-  {
-    key: "a",
-    name: "居里移动端自适应框架",
-    value: "direct:https://github.com/2277419213/vue_h5_dome",
-  },
-  {
-    key: "b",
-    name: "花裤衩后台管理框架",
-    value:
-      "direct:https://github.com/PanJiaChen/vue-admin-template#/permission-control",
-  },
-  {
-    key: "c",
-    name: "antd-admin后台管理框架",
-    value: "direct:https://github.com/zuiidea/antd-admin",
-  },
-];
+//本地文件
+const defaultUrl = require('./default-url');//获取配置的模板地址
 
 const questions = (ProjectName) => {
   return new Promise(async (resolve, reject) => {
+    const urlList = await defaultUrl()
     const rule = [
       {
         type: "input",

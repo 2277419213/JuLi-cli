@@ -1,6 +1,6 @@
 {
   "name": "juli-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "一款自动初始化开源项目的脚手架",
   "main": "./bin/juli-cli",
   "bin": {
