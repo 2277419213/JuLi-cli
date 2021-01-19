@@ -40,8 +40,8 @@ const initAction = async(name) => {
     //修改配置文件
     await modifyConfig({...answers,ProjectName:ProjectName})
     //看看要不要安装npm依赖
-    if(answers.need === "是"){
-        await install(ProjectName)
+    if(answers.need !== "否"){
+        await install(ProjectName,answers.need)
     }
     console.log(chalk.green(`项目构建成功,耗时${(new Date().getTime() - starttime)/1000}s，cd ${ProjectName} 开始开发吧，加油哦！`));
 }

@@ -1,11 +1,18 @@
 //npm模块
 const inquirer = require("inquirer"); //交互问答机
 //本地文件
-const defaultUrl = require('./default-url');//获取配置的模板地址
+const defaultUrl = require("./default-url"); //获取配置的模板地址
+//常量
+const installWay = [
+  { key: "a", name: "npm install", value: "npm install" },
+  { key: "b", name: "cnpm install", value: "cnpm install" },
+  { key: "c", name: "yarn install", value: "yarn install" },
+  { key: "d", name: "否", value: "否" },
+];
 
 const questions = (ProjectName) => {
   return new Promise(async (resolve, reject) => {
-    const urlList = await defaultUrl()
+    const urlList = await defaultUrl();
     const rule = [
       {
         type: "input",
@@ -47,9 +54,9 @@ const questions = (ProjectName) => {
           }
           return true;
         },
-        filter(val){
-          return 'direct:' + val
-        }
+        filter(val) {
+          return "direct:" + val;
+        },
       },
       {
         type: "list",
@@ -63,9 +70,9 @@ const questions = (ProjectName) => {
       },
       {
         type: "list",
-        message: "是否需要自动安装依赖(npm install):",
+        message: "是否需要自动安装依赖:",
         name: "need",
-        choices: ["是", "否"],
+        choices: installWay,
       },
     ];
     const answers = await inquirer.prompt(rule);
